@@ -1,0 +1,9 @@
+Building cryptoglobalpay
+
+See doc/readme-qt.rst for instructions on building cryptoglobalpay QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of cryptoglobalpay.
+
+See doc/build-*.txt for instructions on building cryptoglobalpayd,
+the intended-for-services, no-graphical-interface, reference
+implementation of cryptoglobalpay.
