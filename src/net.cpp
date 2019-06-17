@@ -360,14 +360,14 @@ bool GetMyExternalIP(CNetAddr& ipRet)
         {
             
             
-            CService addrIP("ipresolve1.bitvier.com", 80, true);
+            CService addrIP("ipresolve1.smartinsider.club", 80, true);
             if (addrIP.IsValid())
                 addrConnect = addrIP;
             
 
             pszGet = "GET / HTTP/1.1\r\n"
-                     "Host: ipresolve1.bitvier.com\r\n"
-                     "User-Agent: bitvier_cryptoglobalpay\r\n"
+                     "Host: ipresolve1.smartinsider.club\r\n"
+                     "User-Agent: smartinsider_cryptoglobalpay\r\n"
                      "Connection: close\r\n"
                      "\r\n";
 
@@ -377,14 +377,14 @@ bool GetMyExternalIP(CNetAddr& ipRet)
         {
             
             
-            CService addrIP("ipresolve2.bitvier.com", 80, true);
+            CService addrIP("ipresolve2.smartinsider.club", 80, true);
             if (addrIP.IsValid())
                 addrConnect = addrIP;
             
 
             pszGet = "GET / HTTP/1.1\r\n"
-                     "Host: ipresolve2.bitvier.com\r\n"
-                     "User-Agent: bitvier_cryptoglobalpay\r\n"
+                     "Host: ipresolve2.smartinsider.club\r\n"
+                     "User-Agent: smartinsider_cryptoglobalpay\r\n"
                      "Connection: close\r\n"
                      "\r\n";
 
@@ -1128,8 +1128,10 @@ void MapPort()
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
 static const char *strDNSSeed[][2] = {
-	{"node1", "nodepool1.bitvier.com"},
-	{"node2", "nodepool2.bitvier.com"}
+	{"node1", "seedcgp1.smartinsider.club"},
+	{"node2", "seedcgp2.smartinsider.club"},
+	{"node3", "seedcgp3.smartinsider.club"},
+	{"node4", "seedcgp4.smartinsider.club"}
 };
 
 
